@@ -36,11 +36,12 @@
             txtSearchTerm3 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // btnScrape
             // 
-            btnScrape.Location = new Point(1032, 413);
+            btnScrape.Location = new Point(675, 415);
             btnScrape.Name = "btnScrape";
             btnScrape.Size = new Size(75, 23);
             btnScrape.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             rtbDisplay.Location = new Point(12, 13);
             rtbDisplay.Name = "rtbDisplay";
-            rtbDisplay.Size = new Size(1095, 396);
+            rtbDisplay.Size = new Size(1049, 396);
             rtbDisplay.TabIndex = 1;
             rtbDisplay.Text = "";
             // 
@@ -102,11 +103,22 @@
             label2.TabIndex = 7;
             label2.Text = "Key Terms";
             // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(986, 415);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 23);
+            btnClear.TabIndex = 8;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1119, 450);
+            ClientSize = new Size(1073, 450);
+            Controls.Add(btnClear);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtSearchTerm3);
@@ -131,5 +143,6 @@
         private TextBox txtSearchTerm3;
         private Label label1;
         private Label label2;
+        private Button btnClear;
     }
 }

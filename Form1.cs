@@ -31,7 +31,7 @@ namespace webScraper
                 txtSearchTerm3.Text.Trim()
             };
 
-            int maxPages = 20;  // number of pages you want to scrape
+            int maxPages = 50;  // number of pages you want to scrape
             string after = null;
             HttpClient httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0");
@@ -80,6 +80,11 @@ namespace webScraper
             }
 
             rtbDisplay.AppendText("Finished scraping.\n");
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            rtbDisplay.Clear();
         }
     }
 
